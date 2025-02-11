@@ -27,9 +27,6 @@ let urlSchema = new mongoose.Schema({
 
 let URL = mongoose.model('URL', urlSchema);
 
-URL.createCollection();
-
-
 app.use(cors());
 
 app.use('/public', express.static(`${process.cwd()}/public`));
